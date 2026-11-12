@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS IAM & EC2 | Learning Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111c32;
+      border-bottom: 1px solid #26344d;
+    }
+
+    header h2 {
+      color: #f59e0b;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #172554, #0f172a);
+    }
+
+    .hero span {
+      color: #f59e0b;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f59e0b;
+      color: #111827;
+      padding: 12px 24px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      color: #fbbf24;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .skills {
+      text-align: center;
+      background: #111c32;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #26344d;
+      color: #e2e8f0;
+      padding: 9px 16px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #080f1e;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>AWS Portfolio</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#learning">Learning</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Exploring the <span>AWS Cloud</span></h1>
+    <p>
+      My hands-on learning journey in AWS Identity and Access
+      Management, EC2, cloud security and server deployment.
+    </p>
+    <a class="button" href="#learning">Explore My Learning</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About This Project</h2>
+    <div class="card">
+      <p>
+        This website documents my practical learning in AWS IAM
+        and EC2. I explored identity management, access policies,
+        virtual servers, SSH connectivity, security groups and
+        web server deployment.
+      </p>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2 class="section-title">What I Learned</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>AWS IAM</h3>
+        <p>
+          Learned IAM users, groups, roles, policies,
+          permissions and the principle of least privilege.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>EC2 Instances</h3>
+        <p>
+          Launched an Ubuntu EC2 instance, connected through SSH
+          and practised Linux server administration.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Security Groups</h3>
+        <p>
+          Configured inbound and outbound rules and understood
+          ports such as SSH 22, HTTP 80 and HTTPS 443.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nginx Deployment</h3>
+        <p>
+          Installed and configured Nginx to host this website
+          on an AWS EC2 instance.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="section-title">Technologies & Skills</h2>
+    <span class="tag">AWS IAM</span>
+    <span class="tag">Amazon EC2</span>
+    <span class="tag">Ubuntu Linux</span>
+    <span class="tag">SSH</span>
+    <span class="tag">Security Groups</span>
+    <span class="tag">Nginx</span>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">Git & GitHub</span>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Learning Never Stops!</h2>
+    <p>Building my foundation in Cloud Computing and AWS.</p>
+  </section>
+
+  <footer>
+    <p>AWS IAM & EC2 Learning Portfolio | Hosted on AWS EC2</p>
+  </footer>
+
+</body>
+</html>
